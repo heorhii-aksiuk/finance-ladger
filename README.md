@@ -1,1 +1,1 @@
-# finance-ladger
+# finance-ledger
