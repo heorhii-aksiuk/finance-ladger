@@ -16,6 +16,7 @@ const common = {
 
     buttonBorder: '#FFFFFF',
   },
+  transition: 'all 250ms ease-in',
 }
 
 export default common
