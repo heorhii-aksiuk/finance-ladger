@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const Bar = styled.header`
+  position: fixed;
   height: 120px;
   width: 100%;
   padding-top: 27px;
-  background-color: #110202;
+  /* background-color: rgba(0, 0, 0, 0.3); */
   color: ${(props) => props.theme.color.secondaryText};
 `
 

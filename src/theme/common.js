@@ -2,7 +2,7 @@ const common = {
   fontFamily: "'Open Sans', sans-serif",
   color: {
     accent: '#28A745',
-    hoverAccent: '#25D64D',
+    hoverAccent: '#24d64e',
 
     mainText: '#333333',
     secondaryText: '#FFFFFF',
