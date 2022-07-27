@@ -1,14 +1,16 @@
-import { Container, Motto, Title, ButtonBox } from './Hero.styled'
+import { Container, Box, Motto, Title, ButtonBox } from './Hero.styled'
 import Button from '../Button'
 
 export default function Hero() {
   return (
     <Container>
-      <Motto>The sky is the limit</Motto>
-      <Title>We provide world class financial assistance</Title>
-      <ButtonBox>
-        <Button>Read more</Button>
-      </ButtonBox>
+      <Box>
+        <Motto>The sky is the limit</Motto>
+        <Title>We provide world class financial assistance</Title>
+        <ButtonBox>
+          <Button>Read more</Button>
+        </ButtonBox>
+      </Box>
     </Container>
   )
 }

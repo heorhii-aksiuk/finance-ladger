@@ -1,18 +1,27 @@
 import styled from 'styled-components'
 
+// const setBackground = () => {
+//   console.log(window.screenTop)
+//   return window.screenTop > 120 ? `rgba(0, 0, 0, 0.8)` : `rgba(0, 0, 0, 0.0)`
+// }
+
+// const background = setBackground()
+
 export const Bar = styled.header`
   position: fixed;
   height: 120px;
   width: 100%;
   padding-top: 27px;
-  /* background-color: rgba(0, 0, 0, 0.3); */
   color: ${(props) => props.theme.color.secondaryText};
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
 `
 
 export const Navigation = styled.nav`
+  padding: 12px 22px 0px 22px;
   padding-top: 12px;
   margin: 0 auto;
-  width: 276px;
+  max-width: 480px;
 `
 export const NavList = styled.ul`
   display: flex;

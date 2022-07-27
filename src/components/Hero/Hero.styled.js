@@ -2,17 +2,21 @@ import styled from 'styled-components'
 import showcase from './images/jpg/showcase.jpg'
 
 export const Container = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  width: 100%;
+  /* width: 100%; */
   height: 533px;
   color: ${(props) => props.theme.color.heroText};
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(${showcase});
   background-size: cover;
   background-position: 50% 50%;
+`
+
+export const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 246px;
+  margin: 0 auto;
 `
 
 export const Motto = styled.p`

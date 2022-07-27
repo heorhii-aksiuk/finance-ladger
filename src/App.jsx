@@ -4,6 +4,7 @@ import { common as theme } from './theme'
 import { AppContainer } from './App.styled'
 import AppBar from './components/AppBar'
 import Hero from './components/Hero'
+import About from './components/About'
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <AppBar />
       <AppContainer>
         <Hero />
+        <About />
       </AppContainer>
     </ThemeProvider>
   )
