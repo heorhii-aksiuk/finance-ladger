@@ -9,7 +9,7 @@ export const ContentBox = styled.div`
   padding: 40px 30px;
   margin: 0 auto;
   color: ${(props) => props.theme.color.secondaryText};
-  background-color: ${(props) => props.theme.color.accent};
+  background-color: ${(props) => props.theme.color.blogBackground};
 `
 
 export const PreTitle = styled.p`

@@ -4,24 +4,24 @@ import {
   PreTitle,
   Title,
   Paragraph,
-} from './About.styled'
+} from './Blog.styled'
 import Button from '../Button'
-import team from './images/jpg/people.jpg'
+import blog from './images/jpg/blog.jpg'
 
-export default function About() {
+export default function Blog() {
   return (
     <Container>
-      <img src={team} alt="Team" />
+      <img src={blog} alt="Table with notebooks, tablet and coffee" />
       <ContentBox>
-        <PreTitle>What you are looking for</PreTitle>
-        <Title>We provide bespoke solutions</Title>
+        <PreTitle>April 16 2020</PreTitle>
+        <Title>Blog Post One</Title>
         <Paragraph>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
           ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?
         </Paragraph>
-        <Button accentWithBorder>Read more</Button>
+        <Button blogWithBorder>Read our blog</Button>
       </ContentBox>
     </Container>
   )

@@ -36,7 +36,19 @@ export const Gallery = styled.ul`
   margin: 0 auto;
   padding: 0;
 `
+export const Image = styled.img`
+  padding-bottom: 16px;
+`
+
+export const Name = styled.h3`
+  padding-bottom: 12px;
+  font-size: 23px;
+  line-height: 1.25;
+`
+
+export const Position = styled.p`
+  font-size: 16px;
+  line-height: 1.6;
+`
 
 // export const GalleryItem = styled.li``
-
-// export const Image = styled.img``

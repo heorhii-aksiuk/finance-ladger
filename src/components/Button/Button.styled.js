@@ -20,7 +20,9 @@ export const Accent = styled.button`
   }
 `
 
-export const AccentForm = styled.button``
+export const AccentForm = styled(Accent)`
+  width: 100%;
+`
 
 export const AccentWithBorder = styled(Accent)`
   border: 1px solid ${(props) => props.theme.color.secondaryText};
@@ -32,4 +34,11 @@ export const AccentWithBorder = styled(Accent)`
   }
 `
 
-export const BlogWithBorder = styled.button``
+export const BlogWithBorder = styled(AccentWithBorder)`
+  background-color: ${(props) => props.theme.color.blogBackground};
+
+  :hover,
+  :focus {
+    color: ${(props) => props.theme.color.blogBackground};
+  }
+`

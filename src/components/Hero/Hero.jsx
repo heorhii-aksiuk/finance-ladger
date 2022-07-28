@@ -8,7 +8,7 @@ export default function Hero() {
         <Motto>The sky is the limit</Motto>
         <Title>We provide world class financial assistance</Title>
         <ButtonBox>
-          <Button>Read more</Button>
+          <Button accent>Read more</Button>
         </ButtonBox>
       </Box>
     </Container>

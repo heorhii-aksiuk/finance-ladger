@@ -4,8 +4,8 @@ import {
   Title,
   Paragraph,
   Gallery,
-  GalleryItem,
-  Image,
+  // GalleryItem,
+  // Image,
 } from './Cases.styled'
 import gallery from './images/jpg'
 
@@ -20,9 +20,9 @@ export default function Cases() {
       </Paragraph>
       <Gallery>
         {gallery.map((image, index) => (
-          <GalleryItem key={index}>
-            <Image src={image} alt="???" />
-          </GalleryItem>
+          <li key={index}>
+            <img src={image} alt="???" />
+          </li>
         ))}
       </Gallery>
     </Container>

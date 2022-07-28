@@ -5,11 +5,13 @@ import {
   BlogWithBorder,
 } from './Button.styled'
 
-export default function Button({ blog, boarder, wide, children }) {
-  const accent = !blog && !boarder && !wide
-  const accentForm = !blog && !boarder && wide
-  const accentWithBorder = !blog && boarder && !wide
-  const blogWithBorder = blog && boarder && !wide
+export default function Button({
+  accent,
+  accentForm,
+  accentWithBorder,
+  blogWithBorder,
+  children,
+}) {
   return (
     <>
       {accent && <Accent type="button">{children}</Accent>}
