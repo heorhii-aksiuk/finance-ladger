@@ -10,7 +10,6 @@ export const Image = styled.img``
 
 export const ContentBox = styled.div`
   padding: 40px 20px;
-  margin: 0 auto;
   background-color: ${(props) => props.theme.color.formBackground};
 `
 

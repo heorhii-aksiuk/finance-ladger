@@ -5,6 +5,11 @@ export const LogoBox = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-left: 32px;
+  }
 `
 
 export const Icon = styled(ReactComponent)`
