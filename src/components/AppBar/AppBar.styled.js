@@ -37,6 +37,11 @@ export const NavList = styled.ul`
 export const NavItem = styled.li`
   font-size: 16px;
   line-height: 1.6;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 `
 
 export const NavLink = styled.a`

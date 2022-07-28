@@ -21,6 +21,11 @@ export const Text = styled.p`
   padding-left: 5px;
   font-size: 32px;
   line-height: 1.32;
+
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
+    line-height: 1.21;
+  }
 `
 export const Accent = styled.span`
   transition: ${(props) => props.theme.transition};
