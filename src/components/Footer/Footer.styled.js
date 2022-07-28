@@ -10,11 +10,21 @@ export const Container = styled.footer`
 export const ContentBox = styled.div`
   padding: 20px;
   margin: 0 auto;
-  max-width: 480px;
+  /* max-width: 480px; */
+
+  @media screen and (min-width: 768px) {
+    /* max-width: 1200px; */
+  }
 `
 export const Copyright = styled.p`
   padding-top: 8px;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 6px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
 `

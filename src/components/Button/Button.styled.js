@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import arrow from './images/png/arrow.png'
 
-export const Accent = styled.button`
-  min-width: 156px;
-  height: 45px;
+const Base = styled.button`
+  position: relative;
+  padding: 10px 30px;
   font-size: 16px;
   line-height: 1.6;
   text-transform: capitalize;
@@ -18,13 +19,35 @@ export const Accent = styled.button`
   :focus {
     opacity: 1;
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 10px 30px 10px 40px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
 `
 
-export const AccentForm = styled(Accent)`
+export const Accent = styled(Base)`
+  @media screen and (min-width: 768px) {
+    ::before {
+      content: '';
+      position: absolute;
+      left: 25px;
+      top: 15px;
+      display: inline-block;
+      width: 9px;
+      height: 18px;
+      background-size: contain;
+      background-image: url(${arrow});
+    }
+  }
+`
+
+export const AccentForm = styled(Base)`
   width: 100%;
 `
 
-export const AccentWithBorder = styled(Accent)`
+export const AccentWithBorder = styled(Base)`
   opacity: 1;
   border: 1px solid ${(props) => props.theme.color.secondaryText};
 

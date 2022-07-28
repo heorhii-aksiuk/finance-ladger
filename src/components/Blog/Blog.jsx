@@ -1,5 +1,6 @@
 import {
   Container,
+  Image,
   ContentBox,
   PreTitle,
   Title,
@@ -11,7 +12,7 @@ import blog from './images/jpg/blog.jpg'
 export default function Blog() {
   return (
     <Container>
-      <img src={blog} alt="Table with notebooks, tablet and coffee" />
+      <Image src={blog} alt="Table with notebooks, tablet and coffee" />
       <ContentBox>
         <PreTitle>April 16 2020</PreTitle>
         <Title>Blog Post One</Title>

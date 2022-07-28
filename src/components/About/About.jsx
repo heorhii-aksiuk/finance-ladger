@@ -1,5 +1,6 @@
 import {
   Container,
+  Image,
   ContentBox,
   PreTitle,
   Title,
@@ -11,7 +12,7 @@ import team from './images/jpg/people.jpg'
 export default function About() {
   return (
     <Container>
-      <img src={team} alt="Team" />
+      <Image src={team} alt="Team" />
       <ContentBox>
         <PreTitle>What you are looking for</PreTitle>
         <Title>We provide bespoke solutions</Title>
