@@ -5,7 +5,7 @@ import {
   ContentBox,
   Image,
   FormTitle,
-  RequestField as Field,
+  StyledField as Field,
 } from './RequestForm.styled'
 import formImage from './image/jpg/contact.jpg'
 

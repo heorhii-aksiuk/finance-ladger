@@ -22,7 +22,7 @@ export const FormTitle = styled.h2`
   line-height: 1.26;
 `
 
-export const RequestField = styled(Field)`
+export const StyledField = styled(Field)`
   width: 100%;
   margin-bottom: 32px;
   height: 40px;
@@ -30,6 +30,8 @@ export const RequestField = styled(Field)`
   border: none;
 
   ::placeholder {
+    font-size: 16px;
+    line-height: 1.44;
     color: ${(props) => props.theme.color.placeholderText};
   }
 `

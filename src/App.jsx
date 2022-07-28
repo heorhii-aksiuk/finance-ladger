@@ -9,6 +9,7 @@ import Cases from './components/Cases'
 import Blog from './components/Blog'
 import Team from './components/Team'
 import RequestForm from './components/RequestForm'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Team />
         <RequestForm />
       </AppContainer>
+      <Footer />
     </ThemeProvider>
   )
 }

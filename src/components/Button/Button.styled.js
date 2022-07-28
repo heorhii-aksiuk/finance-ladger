@@ -25,6 +25,7 @@ export const AccentForm = styled(Accent)`
 `
 
 export const AccentWithBorder = styled(Accent)`
+  opacity: 1;
   border: 1px solid ${(props) => props.theme.color.secondaryText};
 
   :hover,
