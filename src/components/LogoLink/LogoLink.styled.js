@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { ReactComponent } from '../../images/svg/logoIcon.svg'
+import { Link } from 'react-scroll'
 
 export const LogoBox = styled.div`
   display: flex;
@@ -32,7 +33,7 @@ export const Accent = styled.span`
   color: ${(props) => props.theme.color.accent};
 `
 
-export const Link = styled.a`
+export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   cursor: pointer;

@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 import 'sanitize.css'
 import 'sanitize.css/forms.css'
 import 'sanitize.css/typography.css'
+import 'react-image-gallery/styles/css/image-gallery.css'
 
 const GlobalStyle = createGlobalStyle`
 h1,

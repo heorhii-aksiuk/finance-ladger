@@ -16,7 +16,8 @@ const common = {
     appBarBackground: `rgba(0, 0, 0, 0.8)`,
     appBarBackgroundTransparent: `rgba(0, 0, 0, 0.0)`,
 
-    buttonBorder: '#FFFFFF',
+    buttonBorder: '#ffffff',
+    warning: '#ff0000',
   },
   transition: 'all 250ms ease-in',
   boxShadow: `0px 2px 4px -1px rgba(0, 0, 0, 0.2),

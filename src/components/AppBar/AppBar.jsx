@@ -49,22 +49,22 @@ export default function AppBar() {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="about" smooth>
+            <NavLink to="about" smooth offset={appBarHeight * -1}>
               About
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="cases" smooth>
+            <NavLink to="cases" smooth offset={appBarHeight * -1}>
               Cases
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="blog" smooth>
+            <NavLink to="blog" smooth offset={appBarHeight * -1}>
               Blog
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="contact" smooth>
+            <NavLink to="contact" smooth offset={appBarHeight * -1}>
               Contact
             </NavLink>
           </NavItem>

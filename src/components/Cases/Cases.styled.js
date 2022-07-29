@@ -73,6 +73,8 @@ export const Gallery = styled.ul`
   }
 `
 
-// export const GalleryItem = styled.li``
+export const GalleryItem = styled.li`
+  cursor: pointer;
+`
 
 // export const Image = styled.img``

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Field } from 'formik'
+import { Form, Field } from 'formik'
 
 export const Container = styled.section`
   display: flex;
@@ -42,6 +42,9 @@ export const FormTitle = styled.h2`
     width: 100%;
   }
 `
+export const StyledForm = styled(Form)`
+  position: relative;
+`
 
 export const StyledField = styled(Field)`
   width: 100%;
@@ -69,4 +72,15 @@ export const ButtonBox = styled.div`
   @media screen and (min-width: 1360px) {
     padding-top: 28px;
   }
+`
+
+export const Warning = styled.div`
+  display: flex;
+  position: absolute;
+  top: 115px;
+`
+
+export const WarningText = styled.p`
+  font-size: 11px;
+  color: ${(props) => props.theme.color.warning};
 `
