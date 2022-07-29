@@ -11,7 +11,7 @@ import blog from './images/jpg/blog.jpg'
 
 export default function Blog() {
   return (
-    <Container>
+    <Container id="blog">
       <ContentBox>
         <PreTitle>April 16 2020</PreTitle>
         <Title>Blog Post One</Title>

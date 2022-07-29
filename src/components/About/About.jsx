@@ -11,7 +11,7 @@ import team from './images/jpg/people.jpg'
 
 export default function About() {
   return (
-    <Container>
+    <Container id="about">
       <Image src={team} alt="Team" />
       <ContentBox>
         <PreTitle>What you are looking for</PreTitle>

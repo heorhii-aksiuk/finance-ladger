@@ -11,7 +11,7 @@ import gallery from './images/jpg'
 
 export default function Cases() {
   return (
-    <Container>
+    <Container id="cases">
       <PreTitle>This is what we do</PreTitle>
       <Title>Business Cases</Title>
       <Paragraph>

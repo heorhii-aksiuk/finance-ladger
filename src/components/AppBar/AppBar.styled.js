@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 
 export const Bar = styled.header`
   position: fixed;
@@ -6,7 +7,6 @@ export const Bar = styled.header`
   width: 100%;
   padding: 21px 22px 0px 22px;
   color: ${(props) => props.theme.color.secondaryText};
-  background-color: rgba(0, 0, 0, 0.8);
   z-index: 100;
 
   @media screen and (min-width: 768px) {
@@ -61,7 +61,7 @@ export const NavItem = styled.li`
   }
 `
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   padding-bottom: 18px;
   border-bottom: 3px solid transparent;
   cursor: pointer;

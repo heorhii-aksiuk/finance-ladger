@@ -13,10 +13,14 @@ const common = {
     blogBackground: '#0284D0',
     formBackground: '#F4F4F4',
     footerBackground: '#333333',
+    appBarBackground: `rgba(0, 0, 0, 0.8)`,
+    appBarBackgroundTransparent: `rgba(0, 0, 0, 0.0)`,
 
     buttonBorder: '#FFFFFF',
   },
   transition: 'all 250ms ease-in',
+  boxShadow: `0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)`,
 }
 
 export default common

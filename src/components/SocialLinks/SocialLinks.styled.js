@@ -16,9 +16,8 @@ export const List = styled.ul`
 
 export const FacebookIcon = styled(Facebook)`
   height: 35px;
-  cursor: pointer;
   transition: ${(props) => props.theme.transition};
-
+  cursor: pointer;
   :hover,
   :focus {
     fill: ${(props) => props.theme.color.accent};
@@ -55,5 +54,37 @@ export const LinkedinIcon = styled(Linkedin)`
   :hover,
   :focus {
     fill: ${(props) => props.theme.color.accent};
+  }
+`
+
+export const FacebookIconTeam = styled(FacebookIcon)`
+  :hover,
+  :focus {
+    fill: currentColor;
+    opacity: 0.8;
+  }
+`
+
+export const TwitterIconTeam = styled(TwitterIcon)`
+  :hover,
+  :focus {
+    fill: currentColor;
+    opacity: 0.8;
+  }
+`
+
+export const YoutubeIconTeam = styled(YoutubeIcon)`
+  :hover,
+  :focus {
+    fill: currentColor;
+    opacity: 0.8;
+  }
+`
+
+export const LinkedinIconTeam = styled(LinkedinIcon)`
+  :hover,
+  :focus {
+    fill: currentColor;
+    opacity: 0.8;
   }
 `

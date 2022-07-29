@@ -3,7 +3,7 @@ import Button from '../Button'
 
 export default function Hero() {
   return (
-    <Container>
+    <Container id="home">
       <Box>
         <Motto>The sky is the limit</Motto>
         <Title>We provide world class financial assistance</Title>

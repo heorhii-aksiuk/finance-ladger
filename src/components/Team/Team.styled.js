@@ -78,14 +78,45 @@ export const Gallery = styled.ul`
   }
 `
 export const Image = styled.img`
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 14px;
+    margin-bottom: 14px;
   }
 
   @media screen and (min-width: 1360px) {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+`
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  transition: ${(props) => props.theme.transition};
+
+  :hover,
+  :focus {
+    transform: scale(1.02);
+    box-shadow: ${(props) => props.theme.boxShadow};
+  }
+`
+
+export const ImageOverlay = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${(props) => props.theme.color.secondaryText};
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: ${(props) => props.theme.transition};
+
+  :hover,
+  :focus {
+    opacity: 1;
   }
 `
 
