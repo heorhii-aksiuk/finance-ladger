@@ -12,6 +12,10 @@ export const Container = styled.section`
   @media screen and (min-width: 768px) {
     height: 1024px;
   }
+
+  @media screen and (min-width: 1360px) {
+    height: 768px;
+  }
 `
 
 export const Box = styled.div`
@@ -25,6 +29,10 @@ export const Box = styled.div`
   @media screen and (min-width: 768px) {
     padding-top: 407px;
     width: 100%;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-top: 279px;
   }
 `
 

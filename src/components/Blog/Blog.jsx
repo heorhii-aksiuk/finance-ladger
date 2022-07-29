@@ -12,7 +12,6 @@ import blog from './images/jpg/blog.jpg'
 export default function Blog() {
   return (
     <Container>
-      <Image src={blog} alt="Table with notebooks, tablet and coffee" />
       <ContentBox>
         <PreTitle>April 16 2020</PreTitle>
         <Title>Blog Post One</Title>
@@ -24,6 +23,7 @@ export default function Blog() {
         </Paragraph>
         <Button blogWithBorder>Read our blog</Button>
       </ContentBox>
+      <Image src={blog} alt="Table with notebooks, tablet and coffee" />
     </Container>
   )
 }

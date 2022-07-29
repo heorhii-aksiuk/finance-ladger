@@ -23,7 +23,11 @@ export const ContentBox = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 52vw;
-    padding: 40px 32px 40px 32px;
+    padding: 40px 32px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 28px 80px 20px;
   }
 `
 
@@ -54,5 +58,15 @@ export const StyledField = styled(Field)`
 
   @media screen and (min-width: 768px) {
     width: 97%;
+  }
+`
+
+export const ButtonBox = styled.div`
+  @media screen and (min-width: 768px) {
+    padding-top: 10px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-top: 28px;
   }
 `

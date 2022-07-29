@@ -26,6 +26,10 @@ export const ContentBox = styled.div`
     width: 52vw;
     padding: 40px 53px 40px 32px;
   }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 56px 80px 28px;
+  }
 `
 
 export const PreTitle = styled.p`

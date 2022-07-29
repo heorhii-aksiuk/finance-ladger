@@ -10,11 +10,6 @@ export const Container = styled.footer`
 export const ContentBox = styled.div`
   padding: 20px;
   margin: 0 auto;
-  /* max-width: 480px; */
-
-  @media screen and (min-width: 768px) {
-    /* max-width: 1200px; */
-  }
 `
 export const Copyright = styled.p`
   padding-top: 8px;

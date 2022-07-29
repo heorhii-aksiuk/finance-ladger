@@ -1,10 +1,19 @@
-import { Bar, Navigation, NavList, NavItem, NavLink } from './AppBar.styled'
+import {
+  Bar,
+  LogoBox,
+  Navigation,
+  NavList,
+  NavItem,
+  NavLink,
+} from './AppBar.styled'
 import LogoLink from '../LogoLink'
 
 export default function AppBar() {
   return (
     <Bar>
-      <LogoLink />
+      <LogoBox>
+        <LogoLink />
+      </LogoBox>
       <Navigation>
         <NavList>
           <NavItem>

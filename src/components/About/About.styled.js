@@ -26,6 +26,10 @@ export const ContentBox = styled.div`
     width: 52vw;
     padding: 40px 53px 40px 32px;
   }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 64px 80px 20px;
+  }
 `
 
 export const PreTitle = styled.p`
@@ -44,6 +48,14 @@ export const Title = styled.h2`
   font-size: 38px;
   font-weight: 300;
   line-height: 1.26;
+
+  @media screen and (min-width: 768px) {
+    width: 204px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: unset;
+  }
 `
 
 export const Paragraph = styled.p`

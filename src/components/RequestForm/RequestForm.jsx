@@ -6,6 +6,7 @@ import {
   Image,
   FormTitle,
   StyledField as Field,
+  ButtonBox,
 } from './RequestForm.styled'
 import formImage from './image/jpg/contact.jpg'
 
@@ -34,7 +35,9 @@ export default function RequestForm() {
               placeholder="Enter email*"
               title="Enter email*"
             />
-            <Button accentForm>Send</Button>
+            <ButtonBox>
+              <Button accentForm>Send</Button>
+            </ButtonBox>
           </Form>
         </Formik>
       </ContentBox>

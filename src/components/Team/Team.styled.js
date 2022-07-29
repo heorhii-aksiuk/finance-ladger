@@ -8,6 +8,10 @@ export const Container = styled.section`
   @media screen and (min-width: 768px) {
     padding: 40px 32px;
   }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 30px;
+  }
 `
 
 export const PreTitle = styled.p`
@@ -46,6 +50,11 @@ export const Paragraph = styled.p`
   @media screen and (min-width: 768px) {
     width: 100%;
     padding-bottom: 24px;
+    font-size: 17px;
+    line-height: 1.66;
+  }
+
+  @media screen and (min-width: 1360px) {
     font-size: 18px;
     line-height: 1.56;
   }
@@ -62,12 +71,21 @@ export const Gallery = styled.ul`
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     grid-gap: 18px;
   }
+
+  @media screen and (min-width: 1360px) {
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-gap: 20px;
+  }
 `
 export const Image = styled.img`
   padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 14px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding-bottom: 20px;
   }
 `
 

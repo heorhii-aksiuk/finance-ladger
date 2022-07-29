@@ -15,16 +15,16 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <AppBar />
       <AppContainer>
+        <AppBar />
         <Hero />
         <About />
         <Cases />
         <Blog />
         <Team />
         <RequestForm />
+        <Footer />
       </AppContainer>
-      <Footer />
     </ThemeProvider>
   )
 }

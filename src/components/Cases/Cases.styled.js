@@ -8,6 +8,10 @@ export const Container = styled.section`
   @media screen and (min-width: 768px) {
     padding: 40px 32px;
   }
+
+  @media screen and (min-width: 1360px) {
+    padding: 80px 28px;
+  }
 `
 
 export const PreTitle = styled.p`
@@ -61,6 +65,11 @@ export const Gallery = styled.ul`
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     grid-gap: 18px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-gap: 20px;
   }
 `
 
