@@ -4,29 +4,28 @@ import {
   Title,
   Paragraph,
   Gallery,
-  Item,
   Image,
   ImageWrapper,
   ImageOverlay,
   Name,
   Position,
-} from './Team.styled'
-import SocialLinks from '../SocialLinks'
+} from './Team.styled';
+import SocialLinks from '../SocialLinks';
 
-import person1 from './img/person1.jpg'
-import person1_2x from './img/person1@2x.jpg'
-import person1_WebP from './img/person1.webp'
-import person1_WebP2x from './img/person1@2x.webp'
+import person1 from './img/person1.jpg';
+import person1_2x from './img/person1@2x.jpg';
+import person1_WebP from './img/person1.webp';
+import person1_WebP2x from './img/person1@2x.webp';
 
-import person2 from './img/person2.jpg'
-import person2_2x from './img/person2@2x.jpg'
-import person2_WebP from './img/person2.webp'
-import person2_WebP2x from './img/person2@2x.webp'
+import person2 from './img/person2.jpg';
+import person2_2x from './img/person2@2x.jpg';
+import person2_WebP from './img/person2.webp';
+import person2_WebP2x from './img/person2@2x.webp';
 
-import person3 from './img/person3.jpg'
-import person3_2x from './img/person3@2x.jpg'
-import person3_WebP from './img/person3.webp'
-import person3_WebP2x from './img/person3@2x.webp'
+import person3 from './img/person3.jpg';
+import person3_2x from './img/person3@2x.jpg';
+import person3_WebP from './img/person3.webp';
+import person3_WebP2x from './img/person3@2x.webp';
 
 export default function Team() {
   return (
@@ -100,5 +99,5 @@ export default function Team() {
         </li>
       </Gallery>
     </Container>
-  )
+  );
 }

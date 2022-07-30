@@ -1,4 +1,4 @@
-import { Formik } from 'formik';
+import { Formik, Form as NetlifyInput } from 'formik';
 import * as Yup from 'yup';
 import { useToggle } from '../../hooks';
 import Button from '../Button';
@@ -30,12 +30,23 @@ const schema = Yup.object().shape({
     .required('This is a required field!'),
 });
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 export default function Contact() {
   const [showModal, toggleModal] = useToggle(false);
 
-  const handleSubmit = (values) => {
-    toggleModal();
-    // alert(JSON.stringify(values, null, 2));
+  const handleSubmit = async (values) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...values }),
+    })
+      .then(() => toggleModal())
+      .catch((error) => alert(error));
   };
 
   return (
@@ -60,7 +71,12 @@ export default function Contact() {
             onSubmit={handleSubmit}
           >
             {({ errors, touched }) => (
-              <Form>
+              <Form name="contact" method="post">
+                <NetlifyInput
+                  type="hidden"
+                  name="contact-form"
+                  value="contact"
+                />
                 <Field
                   name="name"
                   placeholder="Enter your name"
