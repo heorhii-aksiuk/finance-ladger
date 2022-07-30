@@ -39,13 +39,14 @@ const encode = (data) => {
 export default function Contact() {
   const [showModal, toggleModal] = useToggle(false);
 
-  const handleSubmit = async (values) => {
+  const handleSubmit = async (values, actions) => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...values }),
     })
       .then(() => toggleModal())
+      .then(() => actions.resetForm())
       .catch((error) => alert(error));
   };
 
