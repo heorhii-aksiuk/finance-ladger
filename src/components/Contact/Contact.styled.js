@@ -75,10 +75,13 @@ export const ButtonBox = styled.div`
   }
 `
 
-export const Warning = styled.div`
+export const WarningName = styled.div`
   display: flex;
   position: absolute;
-  top: 115px;
+  top: 45px;
+`
+export const WarningEmail = styled(WarningName)`
+  top: 117px;
 `
 
 export const WarningText = styled.p`
