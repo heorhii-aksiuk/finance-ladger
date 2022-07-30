@@ -5,7 +5,7 @@ export default function SuccessRequest({ onClose }) {
     <Container>
       <Title>Thank you!</Title>
       <Text>Your from submission has been received.</Text>
-      <ExitLink onClick={onClose}>&#129044; Back to your site</ExitLink>
+      <ExitLink onClick={onClose}>&#60; Back to your site</ExitLink>
     </Container>
   );
 }
