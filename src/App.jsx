@@ -8,7 +8,7 @@ import About from './components/About'
 import Cases from './components/Cases'
 import Blog from './components/Blog'
 import Team from './components/Team'
-import RequestForm from './components/RequestForm'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
         <Cases />
         <Blog />
         <Team />
-        <RequestForm />
+        <Contact />
         <Footer />
       </AppContainer>
     </ThemeProvider>

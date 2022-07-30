@@ -7,12 +7,12 @@ import {
   GalleryItem,
   // Image,
 } from './Cases.styled'
-import gallery from './images/jpg'
 import { useToggle } from '../../hooks'
 import Modal from '../Modal'
 import Gallery from '../Gallery'
 import { useState } from 'react'
-// import ImageGallery from 'react-image-gallery'
+
+import gallery from './img'
 
 export default function Cases() {
   const [showModal, toggleModal] = useToggle(false)
@@ -35,7 +35,17 @@ export default function Cases() {
         <GalleryList>
           {gallery.map((image, index) => (
             <GalleryItem onClick={() => handleClick(index)} key={index}>
-              <img src={image} alt="???" />
+              <picture>
+                <source
+                  srcSet={`${image.webP} 1x, ${image.webP2x} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${image.jpg} 1x, ${image.jpg2x} 2x`}
+                  type="image/jpeg"
+                />
+                <img src={image.jpg} alt="Gallery item" />
+              </picture>
             </GalleryItem>
           ))}
         </GalleryList>

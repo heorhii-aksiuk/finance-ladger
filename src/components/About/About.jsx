@@ -7,12 +7,23 @@ import {
   Paragraph,
 } from './About.styled'
 import Button from '../Button'
-import team from './images/jpg/people.jpg'
+
+import people from './img/people.jpg'
+import people2x from './img/people@2x.jpg'
+import peopleWebP from './img/people.webp'
+import peopleWebP2x from './img/people@2x.webp'
 
 export default function About() {
   return (
     <Container id="about">
-      <Image src={team} alt="Team" />
+      <picture>
+        <source
+          srcSet={`${peopleWebP} 1x, ${peopleWebP2x} 2x`}
+          type="image/webp"
+        />
+        <source srcSet={`${people} 1x, ${people2x} 2x`} type="image/jpeg" />
+        <Image src={people} alt="Team" />
+      </picture>
       <ContentBox>
         <PreTitle>What you are looking for</PreTitle>
         <Title>We provide bespoke solutions</Title>

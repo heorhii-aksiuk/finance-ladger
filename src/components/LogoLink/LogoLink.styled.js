@@ -1,15 +1,13 @@
 import styled from 'styled-components'
-import { ReactComponent } from '../../images/svg/logoIcon.svg'
+import { ReactComponent } from './img/svg/logoIcon.svg'
 import { Link } from 'react-scroll'
 
 export const LogoBox = styled.div`
   display: flex;
   justify-content: center;
-  /* width: 100%; */
 
   @media screen and (min-width: 768px) {
     display: block;
-    /* padding-left: 32px; */
   }
 `
 

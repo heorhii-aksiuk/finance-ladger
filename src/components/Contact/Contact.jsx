@@ -11,19 +11,30 @@ import {
   ButtonBox,
   Warning,
   WarningText,
-} from './RequestForm.styled'
-import { ReactComponent as WarningIcon } from './image/svg/warning.svg'
-import formImage from './image/jpg/contact.jpg'
+} from './Contact.styled'
+import { ReactComponent as WarningIcon } from './img/svg/warning.svg'
+
+import contact from './img/contact.jpg'
+import contact2x from './img/contact@2x.jpg'
+import contactWebP from './img/contact.webp'
+import contactWebP2x from './img/contact@2x.webp'
 
 const schema = Yup.object().shape({
   name: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!'),
   email: Yup.string().email('Invalid email').required('Required'),
 })
 
-export default function RequestForm() {
+export default function Contact() {
   return (
     <Container id="contact">
-      <Image src={formImage} />
+      <picture>
+        <source
+          srcSet={`${contactWebP} 1x, ${contactWebP2x} 2x`}
+          type="image/webp"
+        />
+        <source srcSet={`${contact} 1x, ${contact2x} 2x`} type="image/jpeg" />
+        <Image src={contact} alt="Man with phone" />
+      </picture>
       <ContentBox>
         <FormTitle>Request Callback</FormTitle>
         <Formik
@@ -58,22 +69,6 @@ export default function RequestForm() {
               </ButtonBox>
             </Form>
           )}
-
-          {/* {({ errors, touched }) => (
-            <Form>
-              <Field name="firstName" />
-              {errors.firstName && touched.firstName ? (
-                <div>{errors.firstName}</div>
-              ) : null}
-              <Field name="lastName" />
-              {errors.lastName && touched.lastName ? (
-                <div>{errors.lastName}</div>
-              ) : null}
-              <Field name="email" type="email" />
-              {errors.email && touched.email ? <div>{errors.email}</div> : null}
-              <button type="submit">Submit</button>
-            </Form>
-          )} */}
         </Formik>
       </ContentBox>
     </Container>

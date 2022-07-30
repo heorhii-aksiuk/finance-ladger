@@ -26,7 +26,17 @@ export default function Gallery({
         </ArrowLeft>
       )}
 
-      <img src={fullImage} alt="" />
+      <picture>
+        <source
+          srcSet={`${fullImage.webP} 1x, ${fullImage.webP2x} 2x`}
+          type="image/webp"
+        />
+        <source
+          srcSet={`${fullImage.jpg} 1x, ${fullImage.jpg2x} 2x`}
+          type="image/jpeg"
+        />
+        <img src={fullImage.jpg} alt="Gallery item full" />
+      </picture>
 
       {!lastImage && (
         <ArrowRight>

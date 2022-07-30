@@ -1,13 +1,22 @@
 import styled from 'styled-components'
-import showcase from './images/jpg/showcase.jpg'
+import showcase from './img/showcase.jpg'
+import showcase2x from './img/showcase@2x.jpg'
 
 export const Container = styled.section`
   height: 533px;
   color: ${(props) => props.theme.color.heroText};
+  background-color: #333333;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(${showcase});
   background-size: cover;
   background-position: 50% 50%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(${showcase2x});
+  }
 
   @media screen and (min-width: 768px) {
     height: 1024px;

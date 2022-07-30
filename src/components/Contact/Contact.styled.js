@@ -14,6 +14,7 @@ export const Image = styled.img`
   @media screen and (min-width: 768px) {
     width: 48vw;
     object-fit: cover;
+    height: 100%;
   }
 `
 
