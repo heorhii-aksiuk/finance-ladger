@@ -1,5 +1,5 @@
 import * as Yup from 'yup';
-import { Formik, Form as NetlifyInput } from 'formik';
+import { Formik, Field as NetlifyInput } from 'formik';
 import { useToggle } from '../../hooks';
 import Button from '../Button';
 import Modal from '../Modal';
