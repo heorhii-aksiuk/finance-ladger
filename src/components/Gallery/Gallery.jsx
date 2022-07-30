@@ -1,18 +1,23 @@
-import { Box, ArrowLeft, ArrowRight, ArrowImage, Close } from './Gallery.styled'
-
-import prev from './images/png/prev.png'
-import next from './images/png/next.png'
-import close from './images/png/close.png'
+import {
+  Box,
+  ArrowLeft,
+  ArrowRight,
+  ArrowImage,
+  Close,
+} from './Gallery.styled';
+import prev from './img/prev.png';
+import next from './img/next.png';
+import close from './img/close.png';
 
 export default function Gallery({
-  fullImage,
+  currentImage,
   changeIndex,
   index,
   galleryLength,
   onClose,
 }) {
-  const firstImage = index === 0
-  const lastImage = index === galleryLength - 1
+  const firstImage = index === 0;
+  const lastImage = index === galleryLength - 1;
 
   return (
     <Box>
@@ -25,19 +30,17 @@ export default function Gallery({
           />
         </ArrowLeft>
       )}
-
       <picture>
         <source
-          srcSet={`${fullImage.webP} 1x, ${fullImage.webP2x} 2x`}
+          srcSet={`${currentImage.webP} 1x, ${currentImage.webP2x} 2x`}
           type="image/webp"
         />
         <source
-          srcSet={`${fullImage.jpg} 1x, ${fullImage.jpg2x} 2x`}
+          srcSet={`${currentImage.jpg} 1x, ${currentImage.jpg2x} 2x`}
           type="image/jpeg"
         />
-        <img src={fullImage.jpg} alt="Gallery item full" />
+        <img src={currentImage.jpg} alt="Gallery item full" />
       </picture>
-
       {!lastImage && (
         <ArrowRight>
           <ArrowImage
@@ -49,5 +52,5 @@ export default function Gallery({
       )}
       <Close onClick={() => onClose()} src={close} />
     </Box>
-  )
+  );
 }

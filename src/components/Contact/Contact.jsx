@@ -1,5 +1,5 @@
-import { Formik, Form as NetlifyInput } from 'formik';
 import * as Yup from 'yup';
+import { Formik, Form as NetlifyInput } from 'formik';
 import { useToggle } from '../../hooks';
 import Button from '../Button';
 import Modal from '../Modal';
@@ -101,15 +101,14 @@ export default function Contact() {
                   </WarningEmail>
                 )}
                 <ButtonBox>
-                  <Button accentForm disabled={errors}>
-                    Send
-                  </Button>
+                  <Button accentForm>Send</Button>
                 </ButtonBox>
               </Form>
             )}
           </Formik>
         </ContentBox>
       </Container>
+
       {showModal && (
         <Modal onClose={() => toggleModal()}>
           <SuccessRequest onClose={() => toggleModal()} />

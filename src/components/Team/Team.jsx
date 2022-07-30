@@ -1,3 +1,4 @@
+import SocialLinks from '../SocialLinks';
 import {
   Container,
   PreTitle,
@@ -10,7 +11,6 @@ import {
   Name,
   Position,
 } from './Team.styled';
-import SocialLinks from '../SocialLinks';
 
 import person1 from './img/person1.jpg';
 import person1_2x from './img/person1@2x.jpg';

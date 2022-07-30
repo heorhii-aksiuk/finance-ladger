@@ -1,25 +1,25 @@
-import styled from 'styled-components'
-import { Link } from 'react-scroll'
+import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const Bar = styled.header`
   position: fixed;
-  height: 120px;
   width: 100%;
+  height: 120px;
   padding: 21px 22px 0px 22px;
   color: ${(props) => props.theme.color.secondaryText};
   z-index: 100;
 
   @media screen and (min-width: 768px) {
-    padding: 20px 32px 0px 32px;
     display: flex;
     justify-content: space-between;
     height: 70px;
+    padding: 20px 32px 0px 32px;
   }
 
   @media screen and (min-width: 1360px) {
     padding: 12px 28px 0px 28px;
   }
-`
+`;
 
 export const LogoBox = styled.div`
   padding-bottom: 12px;
@@ -27,18 +27,18 @@ export const LogoBox = styled.div`
   @media screen and (min-width: 768px) {
     padding-bottom: 0;
   }
-`
+`;
 
 export const Navigation = styled.nav`
-  margin: 0 auto;
   max-width: 480px;
+  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
     margin: 0;
     margin-left: auto;
     padding-top: 8px;
   }
-`
+`;
 export const NavList = styled.ul`
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@ export const NavList = styled.ul`
   @media screen and (min-width: 1360px) {
     width: 420px;
   }
-`
+`;
 export const NavItem = styled.li`
   font-size: 16px;
   line-height: 1.6;
@@ -59,7 +59,7 @@ export const NavItem = styled.li`
     font-size: 18px;
     line-height: 1.56;
   }
-`
+`;
 
 export const NavLink = styled(Link)`
   padding-bottom: 18px;
@@ -83,4 +83,4 @@ export const NavLink = styled(Link)`
   @media screen and (min-width: 1360px) {
     padding-bottom: 20px;
   }
-`
+`;

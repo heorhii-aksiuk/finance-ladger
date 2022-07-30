@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react';
+import { useTheme } from 'styled-components';
+import LogoLink from '../LogoLink';
 import {
   Bar,
   LogoBox,
@@ -5,36 +8,33 @@ import {
   NavList,
   NavItem,
   NavLink,
-} from './AppBar.styled'
-import LogoLink from '../LogoLink'
-import { useEffect, useState } from 'react'
-import { useTheme } from 'styled-components'
+} from './AppBar.styled';
 
 export default function AppBar() {
-  const [scrollPosition, setScrollPosition] = useState(0)
-  const theme = useTheme()
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const theme = useTheme();
 
   const handleScroll = () => {
-    const position = window.scrollY
-    setScrollPosition(position)
-  }
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
-  const appBarHeight = window.innerWidth < 768 ? 120 : 70
+  const appBarHeight = window.innerWidth < 768 ? 120 : 70;
 
   const setBackgroundColor = () =>
     scrollPosition > appBarHeight
       ? theme.color.appBarBackground
-      : theme.color.appBarBackgroundTransparent
+      : theme.color.appBarBackgroundTransparent;
 
-  const backgroundColor = setBackgroundColor()
+  const backgroundColor = setBackgroundColor();
 
   return (
     <Bar style={{ backgroundColor }}>
@@ -71,5 +71,5 @@ export default function AppBar() {
         </NavList>
       </Navigation>
     </Bar>
-  )
+  );
 }

@@ -13,7 +13,6 @@ export const ArrowLeft = styled.div`
   width: 50px;
   height: 100%;
   opacity: 0;
-
   transition: ${(props) => props.theme.transition};
 
   :hover,

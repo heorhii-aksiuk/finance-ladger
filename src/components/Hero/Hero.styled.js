@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import showcase from './img/showcase.jpg'
-import showcase2x from './img/showcase@2x.jpg'
+import styled from 'styled-components';
+import showcase from './img/showcase.jpg';
+import showcase2x from './img/showcase@2x.jpg';
 
 export const Container = styled.section`
   height: 533px;
@@ -25,7 +25,7 @@ export const Container = styled.section`
   @media screen and (min-width: 1360px) {
     height: 768px;
   }
-`
+`;
 
 export const Box = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ export const Box = styled.div`
   @media screen and (min-width: 1360px) {
     padding-top: 279px;
   }
-`
+`;
 
 export const Motto = styled.p`
   padding-bottom: 20px;
@@ -58,7 +58,7 @@ export const Motto = styled.p`
     font-size: 55px;
     line-height: 1.2;
   }
-`
+`;
 
 export const Title = styled.h1`
   padding-bottom: 24px;
@@ -72,4 +72,4 @@ export const Title = styled.h1`
     font-size: 22px;
     line-height: 1.67;
   }
-`
+`;

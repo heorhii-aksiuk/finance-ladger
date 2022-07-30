@@ -1,17 +1,17 @@
+import Button from '../Button';
 import {
   Container,
-  Image,
   ContentBox,
   PreTitle,
   Title,
   Paragraph,
-} from './Blog.styled'
-import Button from '../Button'
+  Image,
+} from './Blog.styled';
 
-import blog from './img/blog.jpg'
-import blog2x from './img/blog@2x.jpg'
-import blogWebP from './img/blog.webp'
-import blogWebP2x from './img/blog@2x.webp'
+import blog from './img/blog.jpg';
+import blog2x from './img/blog@2x.jpg';
+import blogWebP from './img/blog.webp';
+import blogWebP2x from './img/blog@2x.webp';
 
 export default function Blog() {
   return (
@@ -33,5 +33,5 @@ export default function Blog() {
         <Image src={blog} alt="Table with notebooks, tablet and coffee" />
       </picture>
     </Container>
-  )
+  );
 }

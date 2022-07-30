@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { ReactComponent } from './img/svg/logoIcon.svg'
-import { Link } from 'react-scroll'
+import styled from 'styled-components';
+import { Link } from 'react-scroll';
+import { ReactComponent } from './img/svg/logoIcon.svg';
 
 export const LogoBox = styled.div`
   display: flex;
@@ -9,12 +9,12 @@ export const LogoBox = styled.div`
   @media screen and (min-width: 768px) {
     display: block;
   }
-`
+`;
 
 export const Icon = styled(ReactComponent)`
-  transition: ${(props) => props.theme.transition};
   fill: ${(props) => props.theme.color.accent};
-`
+  transition: ${(props) => props.theme.transition};
+`;
 
 export const Text = styled.p`
   padding-left: 5px;
@@ -25,11 +25,11 @@ export const Text = styled.p`
     font-size: 35px;
     line-height: 1.21;
   }
-`
+`;
 export const Accent = styled.span`
   transition: ${(props) => props.theme.transition};
   color: ${(props) => props.theme.color.accent};
-`
+`;
 
 export const NavLink = styled(Link)`
   display: flex;
@@ -49,4 +49,4 @@ export const NavLink = styled(Link)`
   :hover ${Accent}, :focus ${Accent} {
     color: ${(props) => props.theme.color.hoverAccent};
   }
-`
+`;

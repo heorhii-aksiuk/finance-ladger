@@ -1,3 +1,7 @@
+import { useState } from 'react';
+import { useToggle } from '../../hooks';
+import Gallery from '../Gallery';
+import Modal from '../Modal';
 import {
   Container,
   PreTitle,
@@ -5,23 +9,18 @@ import {
   Paragraph,
   Gallery as GalleryList,
   GalleryItem,
-  // Image,
-} from './Cases.styled'
-import { useToggle } from '../../hooks'
-import Modal from '../Modal'
-import Gallery from '../Gallery'
-import { useState } from 'react'
-
-import gallery from './img'
+  Image,
+} from './Cases.styled';
+import gallery from './img';
 
 export default function Cases() {
-  const [showModal, toggleModal] = useToggle(false)
-  const [index, setIndex] = useState(0)
+  const [showModal, toggleModal] = useToggle(false);
+  const [index, setIndex] = useState(0);
 
   const handleClick = (index) => {
-    toggleModal()
-    setIndex(index)
-  }
+    toggleModal();
+    setIndex(index);
+  };
 
   return (
     <>
@@ -44,17 +43,18 @@ export default function Cases() {
                   srcSet={`${image.jpg} 1x, ${image.jpg2x} 2x`}
                   type="image/jpeg"
                 />
-                <img src={image.jpg} alt="Gallery item" />
+                <Image src={image.jpg} alt="Gallery item" />
               </picture>
             </GalleryItem>
           ))}
         </GalleryList>
       </Container>
+
       {showModal && (
         <Modal onClose={() => toggleModal()}>
           <Gallery
             onClose={() => toggleModal()}
-            fullImage={gallery[index]}
+            currentImage={gallery[index]}
             changeIndex={(index) => setIndex(index)}
             index={index}
             galleryLength={gallery.length}
@@ -62,5 +62,5 @@ export default function Cases() {
         </Modal>
       )}
     </>
-  )
+  );
 }

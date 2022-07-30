@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import arrow from './images/png/arrow.png'
+import styled from 'styled-components';
+import arrow from './img/arrow.png';
 
 const Base = styled.button`
   position: relative;
@@ -25,7 +25,7 @@ const Base = styled.button`
     font-size: 18px;
     line-height: 1.56;
   }
-`
+`;
 
 export const Accent = styled(Base)`
   @media screen and (min-width: 768px) {
@@ -41,11 +41,11 @@ export const Accent = styled(Base)`
       background-image: url(${arrow});
     }
   }
-`
+`;
 
 export const AccentForm = styled(Base)`
   width: 100%;
-`
+`;
 
 export const AccentWithBorder = styled(Base)`
   opacity: 1;
@@ -56,7 +56,7 @@ export const AccentWithBorder = styled(Base)`
     color: ${(props) => props.theme.color.accent};
     background-color: ${(props) => props.theme.color.secondaryText};
   }
-`
+`;
 
 export const BlogWithBorder = styled(AccentWithBorder)`
   background-color: ${(props) => props.theme.color.blogBackground};
@@ -65,4 +65,4 @@ export const BlogWithBorder = styled(AccentWithBorder)`
   :focus {
     color: ${(props) => props.theme.color.blogBackground};
   }
-`
+`;

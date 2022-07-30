@@ -1,3 +1,4 @@
+import Button from '../Button';
 import {
   Container,
   Image,
@@ -5,13 +6,12 @@ import {
   PreTitle,
   Title,
   Paragraph,
-} from './About.styled'
-import Button from '../Button'
+} from './About.styled';
 
-import people from './img/people.jpg'
-import people2x from './img/people@2x.jpg'
-import peopleWebP from './img/people.webp'
-import peopleWebP2x from './img/people@2x.webp'
+import people from './img/people.jpg';
+import people2x from './img/people@2x.jpg';
+import peopleWebP from './img/people.webp';
+import peopleWebP2x from './img/people@2x.webp';
 
 export default function About() {
   return (
@@ -36,5 +36,5 @@ export default function About() {
         <Button accentWithBorder>Read more</Button>
       </ContentBox>
     </Container>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import { Container, ContentBox, Copyright } from './Footer.styled'
-import SocialLinks from '../SocialLinks'
+import SocialLinks from '../SocialLinks';
+import { Container, ContentBox, Copyright } from './Footer.styled';
 
 export default function Footer() {
   return (
@@ -9,5 +9,5 @@ export default function Footer() {
         <Copyright>Copyright © 2021 - FinanceLedger</Copyright>
       </ContentBox>
     </Container>
-  )
+  );
 }
